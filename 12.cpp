@@ -1,20 +1,58 @@
-#include<iostream>
-#define kwtotal 10000
-using namespace std;
-void consumo(float cons){
+#include <iostream>
 
-    cout<<  "Ingrese su consumo: ";
-    cin>> cons;
-    float a;
-    a = (cons / kwtotal) * 100;
-    if(a >= 80 && a <= 100){
-            cout<< "CONSUMO MEDIO" ;
-    }
-    else if(a > 100){
-    cout<< "ALTO CONSUMO DE ENERGIA";
-     }
-     }
-     int main(){
-         float cons;
-         consumo(cons);
-         return 0; }
+
+    using namespace std;
+    int main ()
+
+{
+            float consumo,consumog;
+
+            cout << "Consumo general 10000kw ";
+
+
+            cout << "Ingrese su consumo energetico en kw: ";
+            cin >> consumo;
+
+            if (consumo==10000*0.80) {
+
+
+
+            cout << "Consumo medio" ;
+
+            }
+
+        if (consumo==10000) {
+
+
+
+            cout << "Consumo medio" ;
+
+            }
+             if (consumo>10000) {
+
+
+
+            cout << "ALTO consumo" ;
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              return 0;
+
+
+}
